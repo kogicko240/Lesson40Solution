@@ -4,12 +4,13 @@
 #include <iostream>
 using namespace std;
 
+double square(double x);
+
 int main() {
     cout << square(3.5f);
     return 0;
 }
 
-... square(...) {
-    return ...;
+double square(double x) {
+    return x * x;
 }
-

@@ -3,13 +3,15 @@
 #include <iostream>
 using namespace std;
 
-... convert_to_float(... num)
+float convert_to_float(int num);
 {
-    return (...)num;
+    return (float)num;
 }
 
 int main()
 {
+    float result = convert_to_float(10) + 5.5f;
+    cout << result;
     return 0;
 }
 

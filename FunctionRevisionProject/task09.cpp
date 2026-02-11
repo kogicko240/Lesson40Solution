@@ -2,7 +2,10 @@
 // и целое число и возвращает строку из повторяющихся символов.
 
 #include <iostream>
+#include <string>
 using namespace std;
+
+string repeat_symbol(char ch, int count);
 
 int main()
 {
@@ -10,7 +13,7 @@ int main()
     return 0;
 }
 
-... repeat_symbol(... ch, ... count)
+string repeat_symbol(char ch, int count)
 {
     string result;
     for (int i = 0; i < count; i++)

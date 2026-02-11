@@ -2,14 +2,17 @@
 // является ли символ гласной буквой.
 
 #include <iostream>
+#include <cctype>
 using namespace std;
+
+bool is_vowel(char ch);
 
 int main() {
     cout << is_vowel('a');
     return 0;
 }
 
-... is_vowel(... ch) {
+bool is_vowel(char ch) {
     ch = tolower(ch);
     return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
 }

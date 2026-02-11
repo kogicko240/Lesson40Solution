@@ -4,18 +4,22 @@
 #include <iostream>
 using namespace std;
 
+long long fibonacci(int n);
+
 int main() {
+    cout << fibonacci(10);
     return 0;
 }
 
-... fibonacci(...) {
+
+long long fibonacci(int n) {
     if (n <= 1) {
         return n;
     }
 
     long long a = 0;
     long long b = 1;
-    
+
     for (int i = 2; i <= n; i++) {
         long long c = a + b;
         a = b;
@@ -24,4 +28,3 @@ int main() {
 
     return b;
 }
-

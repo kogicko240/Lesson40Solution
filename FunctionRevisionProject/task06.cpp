@@ -2,11 +2,12 @@
 // символ и строку.
 
 #include <iostream>
+#include <string>
 using namespace std;
 
-... concat(... ch, ... str)
+string concat(char ch, string str)
 {
-    return "" + ch + str;
+    return ch + str;
 }
 
 int main()
@@ -14,4 +15,3 @@ int main()
     cout << concat('A', "pple");
     return 0;
 }
-

@@ -5,15 +5,20 @@
 #include <string>
 using namespace std;
 
+string print_table(int n, int m);
+
 int main()
 {
+    string result = print_table(10, 10);
+    cout << result;
+
     return 0;
 }
 
-... print_table(...)
+string print_table(int n, int m)
 {
     string table = "";
-    
+
     for (int i = 1; i <= n; i++)
     {
         for (int j = 1; j <= m; j++)
@@ -25,4 +30,3 @@ int main()
 
     return table;
 }
-

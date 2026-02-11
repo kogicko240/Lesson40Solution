@@ -2,16 +2,17 @@
 // в верхний регистр.
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
-... to_upper(... ch) {
-    if (ch >= 'a' && ch <= 'z') {
-        return ch - 'a' + 'A';
-    }
-
-    return ch;
-}
+double square(double x);
 
 int main() {
+    cout << fixed << setprecision(2);
+    cout << square(3.5f);
     return 0;
+}
+
+double square(double x) {
+    return x * x;
 }

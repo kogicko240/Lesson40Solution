@@ -3,12 +3,14 @@
 #include <iostream>
 using namespace std;
 
-... print_сhar_and_string(... symbol, ... text)
+void print_сhar_and_string(char symbol, string text)
 {
     cout << symbol << ": " << text;
 }
 
 int main()
 {
+
+    print_сhar_and_string('A', "Hello");
     return 0;
 }
